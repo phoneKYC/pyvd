@@ -1,0 +1,13 @@
+services:
+  govd-bot:
+    build: .
+    container_name: govd-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./downloads:/app/downloads
+      - ./govd_bot.db:/app/govd_bot.db
+    deploy:
+      resources:
+        limits:
+          memory: 512M

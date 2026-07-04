@@ -1,0 +1,17 @@
+# govd-bot — Python dependencies
+# Pin versions for reproducible builds
+
+# Telegram bot framework (async, PTB v21)
+python-telegram-bot[job-queue]>=21.6,<22.0
+
+# Media downloader — supports 1000+ sites
+yt-dlp>=2024.11.18
+
+# Async SQLite
+aiosqlite>=0.20.0
+
+# Env file loader
+python-dotenv>=1.0.0
+
+# HTTP (used by PTB internally)
+httpx[http2]>=0.27.0

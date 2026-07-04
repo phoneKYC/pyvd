@@ -1,0 +1,9 @@
+# Nixpacks configuration for Railway / other Nixpacks-based platforms
+[phases.setup]
+nixPkgs = ["python312", "ffmpeg", "ffmpeg-full"]
+
+[phases.install]
+cmds = ["pip install --no-cache-dir -r requirements.txt"]
+
+[start]
+cmd = "python bot.py"
